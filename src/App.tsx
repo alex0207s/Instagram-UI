@@ -1,11 +1,9 @@
-function App() {
-  return (
-    <div className="min-h-screen flex justify-center items-center">
-      <h1 className="text-3xl font-bold text-blue-600">
-        Install & Setup Vite + React + Typescript + Tailwind CSS 3
-      </h1>
-    </div>
-  );
-}
+import { useRoutes } from 'react-router-dom';
+import routes from './routes';
+
+const App: React.FC = () => {
+  const element = useRoutes(routes);
+  return element;
+};
 
 export default App;
