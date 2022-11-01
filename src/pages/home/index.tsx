@@ -1,9 +1,19 @@
 import Header from '../../components/Header';
+import Container from '../../components/Container';
+import IGStory from './components/IGStory';
 
 const Home: React.FC = () => {
   return (
     <>
       <Header />
+      <Container>
+        <div className="flex lg:justify-center">
+          <div className="w-full lg:w-[600px]">
+            <IGStory />
+          </div>
+          <div className="hidden lg:block lg:w-[424px]">IG Following</div>
+        </div>
+      </Container>
       <div className="min-h-screen flex justify-center items-center">
         <h1 className="text-3xl font-bold text-blue-600">
           Instagram Home page
