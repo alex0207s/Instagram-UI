@@ -3,6 +3,7 @@ import Container from '../../components/Container';
 import IGStory from './components/IGStory';
 import IGUser from '../../components/User';
 import IGPost from './components/IGPost';
+import IGProfile from './components/IGProfile';
 
 const IGPostList: React.FC = () => {
   const mock_post = [
@@ -106,7 +107,7 @@ const Home: React.FC = () => {
             <IGPostList />
           </div>
           <div className="hidden lg:block lg:w-[424px]">
-            <IGUser
+            {/* <IGUser
               size="medium"
               showFollow
               isFollowing
@@ -114,7 +115,8 @@ const Home: React.FC = () => {
               location="Taipei"
               avatar="/images/avatars/a1.png"
               id={0}
-            />
+            /> */}
+            <IGProfile></IGProfile>
           </div>
         </div>
       </Container>
