@@ -2,7 +2,6 @@ import Header from '../../components/Header';
 import Container from '../../components/Container';
 import IGUser from '../../components/User';
 import { useAppSelector } from '../../hooks';
-import { is } from 'immer/dist/internal';
 
 const Following: React.FC = () => {
   const friendReducer = useAppSelector((state) => state.friendReducer);
